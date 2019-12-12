@@ -13,7 +13,7 @@ DNS is considered to be the backbone of the internet as we know it - a decentral
 There were seven “top-level” domain names created - gov, edu, com, net, org, mil and int.
 
 
-#### 2 Protocol Wars
+#### 2 The Protocol Wars
 Although there was always a common goal of building a global computer network, this could only happen if everyone was using the same Internet Protocol (IP) - which is the method by which data is sent from one computer to another.  
 
 By the early 1980’s there were several competing systems - Europe was using OSI (Open Systems Intercoonect) and the United States were using the Internet/Arpanet protocol (switching from NCP to TCP/IP in January 1983). 
@@ -43,11 +43,11 @@ Primitive web pages were nothing more than interactive word documents but became
 
 #### Commercialization of the internet
 
- Although there were already commercial enterprises in existence, it wasn’t until 1995 that the internet was first considered to be truly commercialized.  This was due, in part to the development of SSL encryption (Secure Sockets Layer) which allowed for safe financial transactions. It was also the year two major companies were started – the Echo Bay (now EBAY) and Amazon.com
+Although there were already commercial enterprises in existence, it wasn’t until 1995 that the internet was first considered to be truly commercialized.  This was due, in part to the development of SSL encryption (Secure Sockets Layer) which allowed for safe financial transactions. It was also the year two major companies were started – the Echo Bay (now EBAY) and Amazon.
 
- The introduction of https (the hypertext transfer protocol encrypted with SSL) as well as user-friendly web browsers and major internet service providers contributed to the dot com boom of the late 1990's.
+The introduction of https (the hypertext transfer protocol encrypted with SSL) as well as user-friendly web browsers and major internet service providers contributed to the dot com boom of the late 1990's.
 
-#### QUESTION 2
+# QUESTION 2
 
 #### PACKETS
 Packets allow large pieces of information to be transferred accross the TCP/IP network by breaking the data down into smaller pieces or "packets" in order to be compiled again at the other end .  This technology was of critical importance in the development of the internet as it allows for different bandwidths and potential interference while tranferring data from one IP address to another.
@@ -72,15 +72,35 @@ A domain is a collection of internet addresses that share a common suffix, or un
 #### QUESTION 3
 
 Define the features of the following technologies that are essential in terms of the development of the internet:
-  - TCP
-  - HTTP and HTTPS
-  - web browsers (requests, rendering and developer tools)
+  ## TCP
+  TCP (Transmission Control Protocol) is the standard that defines how data is exchanged using the TCP/IP model. 
+  
+  It is connection oriented, reliable, provides end-to-end communication and ensures the data reaches it’s destination in the same order it was sent. 
+
+  This technology has contributed to the advancement of client and server communication through flow control, quality of service, error-checking and recovery mechanisms. 
+
+## HTTP and HTTPS
+
+HTTP (HyperText Transfer Protocol) defines how messages are formatted and transmitted, and what actions Web servers and browsers should take in response to various commands. It is connectionless, media independent and stateless.  
+
+HTTPS is the secure version of HTTP which uses an SSL/TLS encryption.
+
+This technology has contributed to the development of client and server communication as it allows files, images and videos to be carried to devices.  
+
+
+##  web browsers (requests, rendering and developer tools)
 
 Explain how each technology has contributed to the development of client and server communication over the internet
 
     50 - 150 words for each technology
 
 #### QUESTION 4
+
+## Arrays
+
+## Hashes
+
+## Binary trees
 
 Identify THREE data structures used in the Ruby programming language and explain the reasons for using each.	
 
@@ -211,7 +231,7 @@ Write a program that, given a person’s score can tell them:
 
 # END OF ASSSIGNMENT 
 
-The **gentech** class is the *best*. The very best.
+<!-- The **gentech** class is the *best*. The very best.
 
 Things we cover in class:
 * markdown
@@ -253,4 +273,4 @@ if class == "smart"
 
 > Special Quote <br>
 Another Special Quote <br>
-Everything is awesome # T1A1Workbook
+Everything is awesome # T1A1Workbook -->
