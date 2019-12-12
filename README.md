@@ -49,16 +49,25 @@ Primitive web pages were nothing more than interactive word documents but became
 
 #### QUESTION 2
 
-Define the features of the following technologies that are essential in terms of the development of the internet:
+#### PACKETS
+Packets allow large pieces of information to be transferred accross the TCP/IP network by breaking the data down into smaller pieces or "packets" in order to be compiled again at the other end .  This technology was of critical importance in the development of the internet as it allows for different bandwidths and potential interference while tranferring data from one IP address to another.
 
-  - packets
-  - IP addresses (IPv4 and IPv6)
-  - routers and routing
-  - domains and DNS
 
-Explain how each technology has contributed to the development of the internet.
+#### IP ADDRESSES (IPv4 and IPv6)
 
-    50 - 100 words per dot point
+IP (internet protocol) addresses are the “digital addresses” used by computers/digital devices - each device has a unique IP address.  This is important because you first need to be able to locate and differentiate between devices before being able to send and receive information.
+
+The common type of IP address is known as IPv4, for "version 4" which uses a  32-bit address space and supports a maximum of 4.3 billion unique IP addresses.
+
+The IPv6 address was later created which consists of eight groups of four hexadecimal digits so theoretically this will never run out of unique addresses.
+
+#### ROUTERS AND ROUTING
+
+A router is a device that relays data packets between computer networks. The process of routing involves assessing a packet received from one host and directing it to the next network.  In order to determine which interface the packet should be forwarded to, routers use routing policies or routing tables (a list of known routes). 
+
+#### DOMAINS AND DNS
+
+A domain is a collection of internet addresses that share a common suffix, or under the control of a particular organization or individual. DNS (Domain Name System) is the global database that connects IP addresses with their corresponding domain names. This has greatly helped the internet's usability as it allows users to enter familiar words instead of complex numbers.
 
 #### QUESTION 3
 
@@ -147,6 +156,15 @@ puts "."
   ```
 
 #### QUESTION 13
+
+**just need to swap 39 and 19 around
+1. declaring array
+2. index of array
+3. conditions of loop
+4. counting loop and ending
+5. outputs index
+6. this is wehre its supposed to swap - causing it to eliminate swapped number (need to save it somehow)
+
 
 The following code looks for the first two elements that are out of order and swaps them; however, it is not producing the correct results. Rewrite the code so that it works correctly.
 
