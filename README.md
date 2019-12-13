@@ -218,15 +218,15 @@ numbers = {100 => "A", 200 => "B", 300 => "C"}"
 ```
 
 
-#### QUESTION 11
+<!-- #### QUESTION 11
 
 Here’s the problem: “There is a restaurant serving a variety of food. The customers want to be able to buy food of their choice. All the staff just quit, how can you build an app to replace them?”>
 - Identify the classes you would use to solve the problem
 - Write a short explanation of why you would use the classes you have identified	
     
-100
+100 -->
 
-#### QUESTION 12
+<!-- #### QUESTION 12
 
 Identify and explain the error in the following code that is preventing correct execution of the program
 
@@ -237,104 +237,95 @@ fahrenheit = (celsius * 9 / 5) + 32
 print "The result is: "
 print fahrenheit
 puts "."
-  ```
+  ``` -->
 
 #### QUESTION 13
 
-**just need to swap 39 and 19 around
-1. declaring array
-2. index of array
-3. conditions of loop
-4. counting loop and ending
-5. outputs index
-6. this is wehre its supposed to swap - causing it to eliminate swapped number (need to save it somehow)
-
-
-The following code looks for the first two elements that are out of order and swaps them; however, it is not producing the correct results. Rewrite the code so that it works correctly.
 
 ``` ruby
 arr = [5, 22, 29, 39, 19, 51, 78, 96, 84]
 i = 0
 while (i < arr.size - 1 and arr[i] < arr[i + 1])
-  i = i + 1 end
+  i = i + 1 
+end
 puts i
+temp = arr[i]
 arr[i] = arr[i + 1]
-arr[i + 1] = arr[i]
+arr[i + 1] = temp
  ```
 
-#### QUESTION 14
+<!-- #### QUESTION 14
 Demonstrate your algorithmic thinking through completing the following two tasks, in order:
   i. Create a flowchart to outline the steps for listing all prime numbers between 1 and 100 (inclusive). Your flowchart should make use of standard conventions for flowcharts to indicate processes, tasks, actions, or operations  
-ii. Write pseudocode for the process outlined in your flowchart
+ii. Write pseudocode for the process outlined in your flowchart -->
 
 #### QUESTION 15
-
-Write pseudocode OR Ruby code for the following problem:
-
-You have access to two variables: raining (boolean) and temperature (integer). If it’s raining and the temperature is less than 15 degrees, print to the screen “It’s wet and cold”, if it is less than 15 but not raining print “It’s not raining but cold”. If it’s greater than or equal to 15 but not raining print “It’s warm but not raining”, and otherwise tell them “It’s warm and raining”.
-
+```ruby
+# If it’s raining and the temperature is less than 15 degrees, print to the screen “It’s wet and cold”,
+if is_raining  && temperature < 15
+    puts "it's wet and cold"
+# if it is less than 15 but not raining print “It’s not raining but cold”.
+elsif !is_raining && temperature < 15
+    puts "It's not raining but cold"
+# If it’s greater than or equal to 15 but not raining print “It’s warm but not raining”,
+elsif !is_raining && temperature >= 15
+    puts "It's warm but not raining"
+# and otherwise tell them “It’s warm and raining”.
+else
+    puts "It's warm and raining"
+    
+end
+```
 
 #### QUESTION 16
 
-	An allergy test produces a single numeric score which contains the information about all the allergies the person has (that they were tested for). The list of items (and their value) that were tested are:
+```ruby
 
-  - eggs (1)
-  - peanuts (2)
-  - shellfish (4)
-  - strawberries (8)
-  - tomatoes (16)
-  - chocolate (32)
-  - pollen (64)
-  - cats (128)
-So if Tom is allergic to peanuts and chocolate, he gets a score of 34.
+bit_values = [128,64,32,16,8,4,2,1]
 
-Write a program that, given a person’s score can tell them:
-  a. whether or not they’re allergic to a given item
-  b. the full list of allergies.
+allergens = ["cats","pollen","chocolate","tomato","strawberry","shellfish","peanuts","eggs"] 
+puts "what's your score?"
 
+# input score from user
+score = gets.chomp.to_i
+
+# work out which bits make up the score
+
+# start loop
+patient_allergens = []
+bit_values.each do |bit_value|
+# find the highest bit value thats lower than the score
+
+    if score >= bit_value
+        # save corresponding index of bit value 
+        bit_value_index = bit_values.index(bit_value)    
+        patient_allergens.push(allergens[bit_value_index])   
+      
+# remove bit value from input score
+       score -= bit_value
+    end 
+
+end
+
+# REQUIREMENT A - whether or not allergic to given item
+# loop over allergens index and put whether true or false
+allergens.each do |allergen|
+    # is this allergen present in list of patient allergens
+    allergen_index = patient_allergens.index(allergen)
+    if allergen_index == nil
+        # allergen not found
+        puts allergen + " = false" 
+    else
+        # allergen found
+        puts allergen + " = true"
+    end
+        
+end
+
+# REQUIREMENT B - print list of allergens
+
+puts "Full list of allergens: #{patient_allergens}"
+```
 
 # END OF ASSSIGNMENT 
 
-<!-- The **gentech** class is the *best*. The very best.
-
-Things we cover in class:
-* markdown
-* loops
-* lunch
-+ hello
-- world
-
-1. first item
-2. second item
-3. third item
-
-# pictures
-
-![ScreenCap](./fortitude-valley-brunswick-street-new-farm-brisban.jpg)
-
-# links
-
-www.google.com
-
-[Google](https://www.google.com)
-
-# inserting code
-
-``` ruby
-if class == "smart"
-  puts "Markdown is fun!"
-  end
-  ```
-
-```
-Hello World
-if class == "smart"
-  puts "Markdown is fun!"
-  end
-  ```
-  
-# quotes
-
-> Special Quote <br>
-Another Special Quote <br>
-Everything is awesome # T1A1Workbook -->
