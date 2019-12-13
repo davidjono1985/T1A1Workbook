@@ -2,7 +2,7 @@
 #### By David Johnson
 
 # QUESTION 1
-Five key events:
+Five key events from 1980 onwards:
 
 #### 1. Creation of the Domain Name System (DNS)
 
@@ -41,7 +41,7 @@ Until the early 1990’s the internet was used primarily by the government, acad
 
 Primitive web pages were nothing more than interactive word documents but became instantly popular.  This, combined with the power of emails, allowed people to start understanding the enormous possibilities that came with a large interconnected network.  
 
-#### Commercialization of the internet
+#### Commercialization of the Internet
 
 Although there were already commercial enterprises in existence, it wasn’t until 1995 that the internet was first considered to be truly commercialized.  This was due, in part to the development of SSL encryption (Secure Sockets Layer) which allowed for safe financial transactions. It was also the year two major companies were started – the Echo Bay (now EBAY) and Amazon.
 
@@ -49,70 +49,78 @@ The introduction of https (the hypertext transfer protocol encrypted with SSL) a
 
 # QUESTION 2
 
-#### PACKETS
+#### Packets
+
 Packets allow large pieces of information to be transferred accross the TCP/IP network by breaking the data down into smaller pieces or "packets" in order to be compiled again at the other end .  This technology was of critical importance in the development of the internet as it allows for different bandwidths and potential interference while tranferring data from one IP address to another.
 
 
-#### IP ADDRESSES (IPv4 and IPv6)
+#### IP Addresses (IPv4 and IPv6)
 
 IP (internet protocol) addresses are the “digital addresses” used by computers/digital devices - each device has a unique IP address.  This is important because you first need to be able to locate and differentiate between devices before being able to send and receive information.
 
-The common type of IP address is known as IPv4, for "version 4" which uses a  32-bit address space and supports a maximum of 4.3 billion unique IP addresses.
+The common type of IP address is known as IPv4, for "version 4" which uses a 32-bit address space and supports a maximum of 4.3 billion unique IP addresses.
 
 The IPv6 address was later created which consists of eight groups of four hexadecimal digits so theoretically this will never run out of unique addresses.
 
-#### ROUTERS AND ROUTING
+#### Routers and Routing
 
 A router is a device that relays data packets between computer networks. The process of routing involves assessing a packet received from one host and directing it to the next network.  In order to determine which interface the packet should be forwarded to, routers use routing policies or routing tables (a list of known routes). 
 
-#### DOMAINS AND DNS
+#### Domains and DNS
 
 A domain is a collection of internet addresses that share a common suffix, or under the control of a particular organization or individual. DNS (Domain Name System) is the global database that connects IP addresses with their corresponding domain names. This has greatly helped the internet's usability as it allows users to enter familiar words instead of complex numbers.
 
-#### QUESTION 3
+# QUESTION 3
 
-Define the features of the following technologies that are essential in terms of the development of the internet:
-  ## TCP
-  TCP (Transmission Control Protocol) is the standard that defines how data is exchanged using the TCP/IP model. 
+#### TCP
+TCP (Transmission Control Protocol) is the standard that defines how data is exchanged using the TCP/IP model. 
   
-  It is connection oriented, reliable, provides end-to-end communication and ensures the data reaches it’s destination in the same order it was sent. 
+This technology has contributed to the advancement of client and server communication because it is connection oriented, reliable, provides end-to-end communication and ensures the data reaches it’s destination in the same order it was sent. 
 
-  This technology has contributed to the advancement of client and server communication through flow control, quality of service, error-checking and recovery mechanisms. 
+#### HTTP and HTTPS
 
-## HTTP and HTTPS
+HTTP (HyperText Transfer Protocol) defines how messages are formatted and transmitted and also defines what actions web servers and browsers should take in response.  HTTP is connectionless, media independent and stateless.  
 
-HTTP (HyperText Transfer Protocol) defines how messages are formatted and transmitted, and what actions Web servers and browsers should take in response to various commands. It is connectionless, media independent and stateless.  
+HTTPS is the secure version of HTTP which utilises a SSL/TLS encryption.
 
-HTTPS is the secure version of HTTP which uses an SSL/TLS encryption.
-
-This technology has contributed to the development of client and server communication as it allows files, images and videos to be carried to devices.  
+This technology contributed to the development of client and server communication by allowing files, images and videos to be carried to devices.  
 
 
-##  web browsers (requests, rendering and developer tools)
+#### Web Browswers (requests, rendering and developer tools)
 
-Explain how each technology has contributed to the development of client and server communication over the internet
+A web browser is a program that allows users to view web pages on the internet by translating HTTP into readable content, thus contributing to the development of client and server communication over the internet.  There are a multitude of different browsers available for each operating system, all with their own features.  
+The client (browser) submits a HTTP request to the server, which then returns a response to the client. The response contains status information about the request and may also contain the requested content.
 
-    50 - 150 words for each technology
+The browser then uses a rendering engine to render and display the requested content.  By default the rendering engine can display HTML and XML documents and images.
 
-#### QUESTION 4
+Modern web browsers also include their own developer tools.  These tools do a range of things, from inspecting currently-loaded HTML, CSS and JavaScript to showing which assets the page has requested and how long they took to load. 
 
-## Arrays
+# QUESTION 4
 
-## Hashes
+#### Arrays
 
-## Binary trees
+If you want to save a range of numbers, or pack multiple values into one variable, then you use the data structure called an array. Arrays are commonly used in computer programs to organize data so that a related set of values can be easily sorted or searched.
+Data inside an array does not have to be in any order, and arrays can hold any type of data, whether it be a string, an integer, booleans, objects, even additional arrays.
 
-Identify THREE data structures used in the Ruby programming language and explain the reasons for using each.	
+#### Hashes
 
-    50 - 100 words on each data structure
+Hashes are a collection of key-value pairs. They are also known as maps because they map keys (names) to values. Hashing is used to index and retrieve items in a database because it is faster to find the item using the shorter hashed key than to find it using the original value.  Hashing is a more reliable and flexible method of data retrieval than any other data structure
 
-#### QUESTION 5
+#### Blocks
 
-Describe the features of interpreters and compilers and how they are different.	
+Blocks are one of the only things in Ruby that is not an object. They are basically a set of instructions associated with a method call. While the method runs, it can invoke the block one or more times. By utilizing blocks you can reduce repetition and even make coding less error-prone.  
 
-    100 - 200 words on each way code is executed.
+# QUESTION 5
+
+A **COMPILER** converts the whole program into intermediate object code in one go.  Once a program is compiled, its source code is not needed for running the code. In general, compiled programs run faster than the interpreted programs however, the memory requirement is greater due to the creation of the object code.  Errors are displayed after compilation, all at the same time which makes error detection difficult. 
+
+An **INTERPRETER** imitates the execution of programs written in a source language and converts the program by taking a single line at a time, this source code is required to run the program every time. In general, interpreted programs run slower than compiled programs. Interpreter’s require less memory as it does not create intermediate object code and as interpreter's display the errors of each line one by one, it makes error detection easier compared to compilers. 
 
 #### QUESTION 6
+
+#### RUBY
+
+#### PHP
 
 Identify TWO commonly used programming languages and explain the benefits and drawbacks of each.	
 
@@ -122,14 +130,11 @@ Identify TWO commonly used programming languages and explain the benefits and dr
 
 Identify TWO ethical issues from the areas below and discuss the extent to which an IT professional is ethically responsible in terms of the issue.
 
-List of topics containing ethical issues:
-  - access to a user’s personal information (medical, family, financial, personal attributes such as sexuality, religion, or beliefs)
-  - intellectual property, copyright, and acknowledgement.
-  - criminal acts such as theft, fraud, trafficking and distribution of prohibited substances, terrorism
-  - GPS tracking data and other types of metadata, MAC addresses, hardware fingerprints
-  - freedom of thought, conscience, speech and the media
-  - aggressive sales and marketing practices designed to mislead and deceive consumers
-  - trading of shares on the stock exchange OR crypto-currencies
+
+ - criminal acts such as theft, fraud, trafficking and distribution of prohibited substances, terrorism
+
+- aggressive sales and marketing practices designed to mislead and deceive consumers
+
 
 For each ethical issue identify a source of legal information relating to the ethical issue and discuss whether the law is helpful in assisting a developer to act in an ethical way.
 
@@ -139,13 +144,18 @@ Conduct research into a case study of ONE of the ethical issues you have chosen 
 
 #### QUESTION 8
 
+Control flow is the order methods, instructions, and statements are evaluated and executed when a program is running.
+
+A good example of this from the Ruby programming language 
+
+
 Explain control flow, using an example from the Ruby programming language	
 
     100
 
 #### QUESTION 9
 
-Explain type coercion	100
+Type coercion is the changing of an object's type into another type, together with its value. For example, changing an Integer into a String with #to_s or a Float into an Integer with #to_i . ... Let's first look at how we usually coerce values to different types in Ruby with explicit casting helpers
 
 #### QUESTION 10
 
