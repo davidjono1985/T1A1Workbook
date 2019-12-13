@@ -53,7 +53,6 @@ The introduction of https (the hypertext transfer protocol encrypted with SSL) a
 
 Packets allow large pieces of information to be transferred accross the TCP/IP network by breaking the data down into smaller pieces or "packets" in order to be compiled again at the other end .  This technology was of critical importance in the development of the internet as it allows for different bandwidths and potential interference while tranferring data from one IP address to another.
 
-
 #### IP Addresses (IPv4 and IPv6)
 
 IP (internet protocol) addresses are the “digital addresses” used by computers/digital devices - each device has a unique IP address.  This is important because you first need to be able to locate and differentiate between devices before being able to send and receive information.
@@ -119,49 +118,105 @@ An **INTERPRETER** imitates the execution of programs written in a source langua
 #### QUESTION 6
 
 #### RUBY
+BENEFITS: Ruby is an eloquent and succinct language.  It has great tooling, high quality code libraries (there’s a gem for just about anything) and a pragmatic approach to software.  The Ruby community is large and full of high calibre engineers who favour responsible development and promote testing and test automation.  Ruby on Rails is extremely popular in Silicon Valley with the likes of Airbnb, Etsy, GitHub & Shopify all using Ruby on Rails
+
+DRAWBAKCS: 
+One of the biggest argument against Ruby on Rails is it’s slow runtime speed as well as the boot speed of the Rails framework. Depending on the number of gem dependencies and files, it can take a significant amount of time to start, which can frustrate and hinder developer performance. It can also be hard to find good documentation and resources online for the less popular gems and for libraries which make heavy use of mixins. 
 
 #### PHP
 
-Identify TWO commonly used programming languages and explain the benefits and drawbacks of each.	
+BENEFITS: It’s flexible mature language with a small learning curve. There are lots of libraries, packages and frameworks available for free and great community support. PHP is extremely popular – much of the web uses PHP as the back end and therefore there are always jobs available for those who can not only create code but also maintenance. PHP has first-class debugging and questions easily answered because chances are someone’s done something similar already.  
 
-    200 - 400 words on each language
+DRAWBACKS:
+Because it’s interpreted and not compiled, performance is not necessarily as good as other languages.  Another issues is because it’s flexible and forgiving it becomes really easy to write bad PHP and also has quite a few inconsistently named functions.  Due to the low learning curve/low barrier of entry, the outside world tends to view PHP as an insecure and entry level language which can affect ability to secure higher paying jobs.  PHP is also rarely used in emerging technologies or process development. Due to threaded execution and the need for global extensions there are also scalability and support issues. 
 
 #### QUESTION 7
 
 Identify TWO ethical issues from the areas below and discuss the extent to which an IT professional is ethically responsible in terms of the issue.
 
+For each ethical issue identify a source of legal information relating to the ethical issue and discuss whether the law is helpful in assisting a developer to act in an ethical way.
 
  - criminal acts such as theft, fraud, trafficking and distribution of prohibited substances, terrorism
 
 - aggressive sales and marketing practices designed to mislead and deceive consumers
 
-
-For each ethical issue identify a source of legal information relating to the ethical issue and discuss whether the law is helpful in assisting a developer to act in an ethical way.
-
 Conduct research into a case study of ONE of the ethical issues you have chosen discuss how an ethical IT professional should respond to the case study and how they might mitigate or prevent ethical breaches.	
+
+An interesting case study is Silk Road - and online platform.  An IT professional should 
 
     200 - 400 words for each ethical issue
 
 #### QUESTION 8
 
-Control flow is the order methods, instructions, and statements are evaluated and executed when a program is running.
+Control flow is the order that methods, instructions, and statements are evaluated and executed when a program is running. A good example of this from the Ruby programming language is an if/elsif/else statement: 
 
-A good example of this from the Ruby programming language 
+``` ruby
+puts "enter a number 1-10: "
+answer = gets.chomp
+answer = answer.to_i;
 
+if answer == 1
+  puts "number is 1"
+elsif answer == 5
+  puts "number is 5"
+elsif answer == 10
+  puts "number is 10"
+else
+  puts "number is something other than 1, 5, or 10"
+end
 
-Explain control flow, using an example from the Ruby programming language	
+  ```
+In the code above, the user is asked to provide a number from 1-10.  Once the number is entered and changed into an integer, ruby then executes the if statement from top to bottom.  
 
-    100
+If the chosen number is "1", it will print "number is 1" and then stop running. If the number is something else, it will then move onto the first elsif which will checks if the number is "5".  If so it prints and stops, if not it then moves onto the next elsif.  If the number does not match 1, 5, or 10 it then moves to the else statement.  This is an example of control flow.  
 
-#### QUESTION 9
+# QUESTION 9
 
-Type coercion is the changing of an object's type into another type, together with its value. For example, changing an Integer into a String with #to_s or a Float into an Integer with #to_i . ... Let's first look at how we usually coerce values to different types in Ruby with explicit casting helpers
+Type coercion is the changing of an object's type into another type, together with its value eg. changing a float into an integer, or an integer into a string.
 
-#### QUESTION 10
+``` ruby
+puts "enter a number 1-10:"
+answer = gets.chomp
+answer = answer.to_i; 
+```
+In the example from above, when the number is entered by the user it is automatically a string and would need to be changed to an integer to be able to excecute the if/elsif/else statement.  By using the ".to_i" this successfully changes the string into an integer.  
 
-Describe the data types recognised by the Ruby programming language. In your description you should give example code which uses each data type, and include the name of the Ruby classes which represent each data type.	
+# QUESTION 10
 
-    100
+**Boolean:** is a data type that represents only true or false. There is no Boolean class in Ruby.
+```ruby
+y = false
+```
+**Symbols:** are like strings but used instead of strings because they can take up much less memory. These belong to class *Symbol*:
+```ruby
+x = :symbol
+```
+**Numbers:** Generally a number is defined as a series of digits, using a dot as a decimal mark. 
+
+*Integers* are whole numbers.  These belong to class *Integer*: 
+```ruby
+puts 15
+```
+Floating point numbers or *floats* contain decimal points. These belong to class *Float*:
+```ruby
+puts 15.4596
+```
+**Strings:** are a group of letters that represent a sentence or a word. These belong to class *String*:
+
+```ruby
+puts "this is a string"
+```
+
+**Arrays:** store data or list of data. These belong to class *Array*:
+```ruby
+x = [1,2,3,4,5,6,7,8,9,10]
+```
+
+**Hashes:** assign values to keys. These belong to class *Hash*:
+```ruby
+numbers = {100 => "A", 200 => "B", 300 => "C"}"
+```
+
 
 #### QUESTION 11
 
@@ -169,7 +224,6 @@ Here’s the problem: “There is a restaurant serving a variety of food. The cu
 - Identify the classes you would use to solve the problem
 - Write a short explanation of why you would use the classes you have identified	
     
-
 100
 
 #### QUESTION 12
