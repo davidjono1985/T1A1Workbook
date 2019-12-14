@@ -14,6 +14,7 @@ There were seven “top-level” domain names created - gov, edu, com, net, org,
 
 
 #### 2 The Protocol Wars
+
 Although there was always a common goal of building a global computer network, this could only happen if everyone was using the same Internet Protocol (IP) - which is the method by which data is sent from one computer to another.  
 
 By the early 1980’s there were several competing systems - Europe was using OSI (Open Systems Intercoonect) and the United States were using the Internet/Arpanet protocol (switching from NCP to TCP/IP in January 1983). 
@@ -88,6 +89,7 @@ This technology contributed to the development of client and server communicatio
 #### Web Browswers (requests, rendering and developer tools)
 
 A web browser is a program that allows users to view web pages on the internet by translating HTTP into readable content, thus contributing to the development of client and server communication over the internet.  There are a multitude of different browsers available for each operating system, all with their own features.  
+
 The client (browser) submits a HTTP request to the server, which then returns a response to the client. The response contains status information about the request and may also contain the requested content.
 
 The browser then uses a rendering engine to render and display the requested content.  By default the rendering engine can display HTML and XML documents and images.
@@ -115,38 +117,63 @@ A **COMPILER** converts the whole program into intermediate object code in one g
 
 An **INTERPRETER** imitates the execution of programs written in a source language and converts the program by taking a single line at a time, this source code is required to run the program every time. In general, interpreted programs run slower than compiled programs. Interpreter’s require less memory as it does not create intermediate object code and as interpreter's display the errors of each line one by one, it makes error detection easier compared to compilers. 
 
-#### QUESTION 6
+# QUESTION 6
 
 #### RUBY
 BENEFITS: Ruby is an eloquent and succinct language.  It has great tooling, high quality code libraries (there’s a gem for just about anything) and a pragmatic approach to software.  The Ruby community is large and full of high calibre engineers who favour responsible development and promote testing and test automation.  Ruby on Rails is extremely popular in Silicon Valley with the likes of Airbnb, Etsy, GitHub & Shopify all using Ruby on Rails
 
-DRAWBAKCS: 
-One of the biggest argument against Ruby on Rails is it’s slow runtime speed as well as the boot speed of the Rails framework. Depending on the number of gem dependencies and files, it can take a significant amount of time to start, which can frustrate and hinder developer performance. It can also be hard to find good documentation and resources online for the less popular gems and for libraries which make heavy use of mixins. 
+DRAWBACKS: One of the biggest argument against Ruby on Rails is it’s slow runtime speed as well as the boot speed of the Rails framework. Depending on the number of gem dependencies and files, it can take a significant amount of time to start, which can frustrate and hinder developer performance. It can also be hard to find good documentation and resources online for the less popular gems and for libraries which make heavy use of mixins. 
 
 #### PHP
 
-BENEFITS: It’s flexible mature language with a small learning curve. There are lots of libraries, packages and frameworks available for free and great community support. PHP is extremely popular – much of the web uses PHP as the back end and therefore there are always jobs available for those who can not only create code but also maintenance. PHP has first-class debugging and questions easily answered because chances are someone’s done something similar already.  
+BENEFITS: It’s a flexible mature language with a small learning curve. There are lots of libraries, packages and frameworks available for free and great community support. PHP is extremely popular – much of the web uses PHP as the back end and therefore there are always jobs available for those who can not only create code but also maintenance. PHP has first-class debugging and questions easily answered because chances are someone’s done something similar already.  
 
-DRAWBACKS:
-Because it’s interpreted and not compiled, performance is not necessarily as good as other languages.  Another issues is because it’s flexible and forgiving it becomes really easy to write bad PHP and also has quite a few inconsistently named functions.  Due to the low learning curve/low barrier of entry, the outside world tends to view PHP as an insecure and entry level language which can affect ability to secure higher paying jobs.  PHP is also rarely used in emerging technologies or process development. Due to threaded execution and the need for global extensions there are also scalability and support issues. 
+DRAWBACKS: Because it’s interpreted and not compiled, performance is not necessarily as good as other languages.  Another issues is because it’s flexible and forgiving it becomes really easy to write bad PHP and also has quite a few inconsistently named functions.  Due to the low learning curve/low barrier of entry, the outside world tends to view PHP as an insecure and entry level language which can affect ability to secure higher paying jobs.  PHP is also rarely used in emerging technologies or process development. Due to threaded execution and the need for global extensions there are also scalability and support issues. 
 
-#### QUESTION 7
+# QUESTION 7
 
-Identify TWO ethical issues from the areas below and discuss the extent to which an IT professional is ethically responsible in terms of the issue.
+## Aggressive sales and marketing practices designed to mislead and deceive consumers
 
-For each ethical issue identify a source of legal information relating to the ethical issue and discuss whether the law is helpful in assisting a developer to act in an ethical way.
+Although bullyish sales and marketing tactics are somewhat commonplace these days (for example the people trying to get you to sign up to things outside Woolworths) there are more and more instances popping up on the internet where deceit is used to try and encourage signing up or paying money for ficticious things.  
 
- - criminal acts such as theft, fraud, trafficking and distribution of prohibited substances, terrorism
+A popular misleading sales tactic is creating fake posts on social media with enticing captions like “I made $100000 on bitcoin overnight.”  These are purposely designed to encourage unsuspecting people to click and sign up to these offerings with the false hope that there will be a financial benefit
 
-- aggressive sales and marketing practices designed to mislead and deceive consumers
+An example of this occurred a couple of years few years ago when my friend Paul’s image was used in a fake post trying to encourage people to invest money in a fake enterprise.  
 
-Conduct research into a case study of ONE of the ethical issues you have chosen discuss how an ethical IT professional should respond to the case study and how they might mitigate or prevent ethical breaches.	
+![fake ad](./docs/screenshot.png)
 
-An interesting case study is Silk Road - and online platform.  An IT professional should 
+Any ethical IT proffessional will stay away from working for these companies as it could not only be detrimental to their professional reputation, these practices are also in direct breach of ACCC guidelines.
 
-    200 - 400 words for each ethical issue
+```
+It is illegal for a business to engage in conduct that misleads or deceives or is likely to mislead or deceive consumers or other businesses. This law applies even if you did not intend to mislead or deceive anyone or no one has suffered any loss or damage as a result of your conduct.
+```
+More information relating to this can be found on the Australian Competition and Consumer Commission website:
+```
+https://www.accc.gov.au/publications/advertising-selling/advertising-and-selling-guide/avoid-misleading-or-deceptive-claims-or-conduct/misleading-or-deceptive-conduct
+```
 
-#### QUESTION 8
+
+## Criminal acts
+
+Although there may be some "shades of grey" with regards to ethics in the IT proffession, there are also things that are completely black and white, for example engaging in criminal acts - even if it is done using an online platform.  
+
+**Silk Road** was an online black market and the first modern darknet market, best known as a platform for selling illegal drugs.
+
+As part of the dark web, it used bitcoin as currency and was operated as a Tor hidden service, such that online users were able to browse it anonymously and securely without potential traffic monitoring. 
+
+Ross William Ulbricht (aka. Dread Pirate Roberts) the founder of Silk Road was convicted of Money laundering, Computer hacking, and Conspiracy to traffic narcotics and on May 29 2015 was sentenced to Double life imprisonment + 40 years without possibility of parole. 
+
+IT proffesiionals arouind the world should always try to avoid participating in criminal/illegal activities as it usually ends with damaged reputations and jail time.     
+
+For more information on drug laws in Queensland and Australia:
+```
+Queensland Government:
+https://www.qld.gov.au/law/crime-and-police/types-of-crime/drug-offences
+
+The Australian Federal Proscecution Service:
+https://www.cdpp.gov.au/crimes-we-prosecute/serious-drugs/drug-trafficking-selling-and-cultivation
+```
+# QUESTION 8
 
 Control flow is the order that methods, instructions, and statements are evaluated and executed when a program is running. A good example of this from the Ruby programming language is an if/elsif/else statement: 
 
@@ -222,7 +249,7 @@ To solve the problem I would create two classes - each with their own methods:
 1. Waitstaff class
 2. Kitchenstaff class
 
-Using these two classes I would be able to recreate the entire end-to-end dining experience the easiest way possible as both classes contain repeatable methods.   
+Using these two classes I would be able to recreate the entire end-to-end dining experience. This is the easiest way to do it as both classes will contain repeatable methods.   
 
 I would use the following methods for the Waitstaff class:
 - greet and seat patron
@@ -299,7 +326,7 @@ else
 end
 ```
 
-#### QUESTION 16
+# QUESTION 16
 
 ```ruby
 
