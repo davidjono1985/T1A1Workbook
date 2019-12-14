@@ -216,20 +216,27 @@ x = [1,2,3,4,5,6,7,8,9,10]
 ```ruby
 numbers = {100 => "A", 200 => "B", 300 => "C"}"
 ```
+# QUESTION 11
 
+To solve the problem I would create two classes - each with their own methods:
+1. Waitstaff class
+2. Kitchenstaff class
 
-<!-- #### QUESTION 11
+Using these two classes I would be able to recreate the entire end-to-end dining experience the easiest way possible as both classes contain repeatable methods.   
 
-Here’s the problem: “There is a restaurant serving a variety of food. The customers want to be able to buy food of their choice. All the staff just quit, how can you build an app to replace them?”>
-- Identify the classes you would use to solve the problem
-- Write a short explanation of why you would use the classes you have identified	
-    
-100 -->
+I would use the following methods for the Waitstaff class:
+- greet and seat patron
+- input food and drink order
+- transfer food and drink from kitchen
+- serve bill and facilitate transaction
+- clean and reset table
 
-<!-- #### QUESTION 12
+I would use the following methods for the Cook class:
+- gather ingredients (as per food and drink order)
+- prepare ingredients (as per recipe)
+- serve ingredients 
 
-Identify and explain the error in the following code that is preventing correct execution of the program
-
+# QUESTION 12
 
 ``` ruby
 celsius = gets
@@ -237,10 +244,11 @@ fahrenheit = (celsius * 9 / 5) + 32
 print "The result is: "
 print fahrenheit
 puts "."
-  ``` -->
+  ```
 
-#### QUESTION 13
+The issue with the above code is "gets" is currently a string and needs to be an integer for the fahrenheit equation to work.  Changing to "gets.to_i" will correct this issue.     
 
+# QUESTION 13
 
 ``` ruby
 arr = [5, 22, 29, 39, 19, 51, 78, 96, 84]
@@ -254,12 +262,26 @@ arr[i] = arr[i + 1]
 arr[i + 1] = temp
  ```
 
-<!-- #### QUESTION 14
-Demonstrate your algorithmic thinking through completing the following two tasks, in order:
-  i. Create a flowchart to outline the steps for listing all prime numbers between 1 and 100 (inclusive). Your flowchart should make use of standard conventions for flowcharts to indicate processes, tasks, actions, or operations  
-ii. Write pseudocode for the process outlined in your flowchart -->
+# QUESTION 14
 
-#### QUESTION 15
+![Flowchart](./docs/print_prime_numbers.png)
+
+Start with initial values:
+count = 100
+x = 0
+y = 0
+
+- If count is less than 100 continue with the loop
+- add 1 to x every iteration through the loop
+- when y is smaller than x, add 1 to y. 
+- if (x % y) equals 0 return to start of loop, otherwise if (x % y) doesn't equal 0 return to check if y is smaller than x
+- when y equals x, the number is prime so prints to screen
+
+
+
+
+
+# QUESTION 15
 ```ruby
 # If it’s raining and the temperature is less than 15 degrees, print to the screen “It’s wet and cold”,
 if is_raining  && temperature < 15
@@ -294,8 +316,8 @@ score = gets.chomp.to_i
 # start loop
 patient_allergens = []
 bit_values.each do |bit_value|
-# find the highest bit value thats lower than the score
 
+# find the highest bit value thats lower than the score
     if score >= bit_value
         # save corresponding index of bit value 
         bit_value_index = bit_values.index(bit_value)    
